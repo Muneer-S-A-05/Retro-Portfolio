@@ -5,13 +5,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.3) 1px, transparent 1px);
+    
+    /* This controls the size of the grid squares (40px by 40px) */
+    background-size: 30px 30px;
 }
 
 .window{
-    width: 80%;
-    max-width:900px;
+    width: 75vw;
+    max-width:1200px;
     aspect-ratio: 16/9;
-    background-color: rgb(247, 245, 230);
+    background-color: #f7f3d6;
     border: 3px solid  black;
     border-radius: 21px;
     margin:0;
@@ -22,7 +29,7 @@ body{
 }
 
 .titlebar{
-    font-size: 2.3vh;
+    font-size: 12px;
     font-weight: 1000;
     display: flex;
     align-items: center;
@@ -33,14 +40,27 @@ body{
     height: 3vh;
 }
 
+.timedate{
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+
+.timedate img{
+    filter: brightness(0);
+}
+
 .main{
     display: flex;
     flex-direction: column;
     padding: 20px;
     align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .toolbar-area{
+    flex: 0 0 auto;
     margin-top: auto;
     /*background-color: red;*/
     display: flex;
@@ -52,11 +72,16 @@ body{
     margin-top:auto;
     display: flex;
     justify-content: space-evenly;
-    gap: 0.7em;
+    align-items: center;
+    gap: 1em;
     border: 0.15em solid black;
     border-radius: 12px;
     height: 30%;
     width: fit-content;
-    padding: 8px 16px;
+    padding: 12px 16px;
     margin-bottom: 5px;
+}
+
+.toolbar img{
+    height: 30px;
 }
