@@ -14,7 +14,7 @@ function showTime() {
 
     // Puts them into the HTML
     document.getElementById('time').textContent = timeStr;
-    document.getElementById('date').textContent = dateStr;
+    document.getElementById('date').textContent = dateStr.slice(0,3)+dateStr.slice(4);
 }
 
 // Start immediately, then update every second
