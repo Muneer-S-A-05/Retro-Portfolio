@@ -14,6 +14,22 @@ body{
     background-size: 30px 30px;
 }
 
+.mainWindowButton{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    width: 40px;
+    aspect-ratio: 1/1;
+    background-color: #f7f3d6;
+    border: 0.15em solid  black;
+    border-radius: 30%;
+}
+
+.mainWindowButton img{
+    width: 25px;
+    margin: auto;
+}
+
 .mainWindow{
     position:fixed;
     width: 75vw;
@@ -38,6 +54,7 @@ body{
     padding: 4px 20px;
     border-bottom: 3px solid  black;
     height: 3vh;
+    touch-action: none;
 }
 
 .titlebar .buttons{
@@ -60,6 +77,8 @@ body{
     background-color: #fac800;
 }
 .titlebar .green{
+    /* hiding green for now*/
+    display: none;
     background-color: #35c759;
 }
 
