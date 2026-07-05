@@ -10,11 +10,12 @@ body{
         linear-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0, 0, 0, 0.3) 1px, transparent 1px);
     
-    /* This controls the size of the grid squares (40px by 40px) */
+    /* grid size control aakan */
     background-size: 30px 30px;
 }
 
-.window{
+.mainWindow{
+    position:fixed;
     width: 75vw;
     max-width:1200px;
     aspect-ratio: 16/9;
@@ -40,25 +41,37 @@ body{
 }
 
 .titlebar .buttons{
+    display: flex;
+    gap: 1em;
+}
+
+.titlebar .butt{
     align-self: center;
-    background-color: #ff5c60;
-    height: 14px;
+    height: 1em;
     aspect-ratio: 1/1;
     border-radius: 100%;
-    box-shadow: 
-    20px 0px #fac800,
-    40px 0px #35c759;
-    margin-right: 40px;
     filter: drop-shadow(2px 2px  #000000);
 }
 
-.titlebar .title{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+.titlebar .red{
+    background-color: #ff5c60;
+}
+.titlebar .yellow{
+    background-color: #fac800;
+}
+.titlebar .green{
+    background-color: #35c759;
+}
+
+.titlebar .dragarea{
+    width: 48vw;
+    height: 100%;
+    cursor: grab;
+    /* background-color: rgba(0, 0, 0, 0.3);*/
 }
 
 .timedate{
+    flex-grow: 0;
     align-items: center;
     display: flex;
     gap: 15px;
